@@ -1,0 +1,25 @@
+# Exclude local dependencies and build outputs.
+node_modules
+dist
+coverage
+
+# Exclude version control metadata and editor settings.
+.git
+.github
+.idea
+.vscode
+
+# Exclude local environment files and secrets.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Exclude logs and operating-system metadata.
+*.log
+.DS_Store
+
+# Exclude local Docker configuration files from the build context.
+Dockerfile
+.dockerignore
